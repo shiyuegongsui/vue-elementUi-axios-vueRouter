@@ -1,0 +1,35 @@
+{
+  "name": "zijian",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "npx --max_old_space_size=4096 vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "element-ui": "^2.8.2",
+    "highcharts": "^7.1.1",
+    "vue": "^2.6.6",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-element": "^1.0.1",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
