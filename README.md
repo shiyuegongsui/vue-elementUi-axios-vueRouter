@@ -1,4 +1,6 @@
-# dz-print
+# vue-elementUi-axios-vueRouter
+PC开发基础骨架
+技术栈: vue,axios,vuex,elementUi,vueRouter,sass
 
 ## Project setup
 ```
