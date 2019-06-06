@@ -15,11 +15,22 @@ js规范
     props 中声明用 greetingText,   greeting-text="hi"
 */
 
-import dzFooter from '@/components/common/dzFooter';
 
+
+//组件库引用
+import {
+    Loading
+} from 'element-ui';
+
+//自定义方法的引用
 import {
     validate
 } from "@/plugins/validate.js";
+
+//组件引用
+import dzFooter from '@/components/common/dzFooter';
+
+
 
 //书写顺序
 export default {
@@ -29,8 +40,6 @@ export default {
         dzFooter
     },
     props: {
-        // 命名未 greetingText 
-        //使用 greeting-text="hi"
     },
     data() {
         return {
