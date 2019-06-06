@@ -1,8 +1,6 @@
 <template>
 <div id="app">
-    <div class="bg">
-
-    </div>
+    <div class="bg"></div>
     <img src="~@/assets/images/header-logo.png">
     <router-view></router-view>
     <dz-footer></dz-footer>
@@ -10,15 +8,29 @@
 </template>
 
 <script>
+/*
+js规范
+    命名:方法,变量  首字母小写驼峰式命名 
+    书写顺序：如export default中的顺序
+    props 中声明用 greetingText,   greeting-text="hi"
+*/
+
 import dzFooter from '@/components/common/dzFooter';
+
 import {
     validate
 } from "@/plugins/validate.js";
 
+//书写顺序
 export default {
     name: 'layOut',
+    mixins: [],
     components: {
         dzFooter
+    },
+    props: {
+        // 命名未 greetingText 
+        //使用 greeting-text="hi"
     },
     data() {
         return {
@@ -32,9 +44,13 @@ export default {
             },
         }
     },
+    computed: {},
+    watch: {},
     created() {
         console.log(validate);
     },
+    mounted() {},
+    destroyed() {},
     methods: {
         getDetail() {
             this.$ajax.get("/index/countWare", {
@@ -60,6 +76,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/*
+css规范
+    命名：烤串形式  小写英文 ，具有语义化   例如： .nav-list  
+    规则：
+        1.css的嵌套层级 最好不超过4层 
+        2.在页面中尽量避免使用style属性
+        3.布局定位属性–>自身属性–>文本属性–>其他属性. 此条可根据自身习惯书写, 但尽量保证同类属性写在一起.
+*/
+
 .bg {
     width: 120px;
     height: 63px;
