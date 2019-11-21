@@ -21,4 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.view-main{
+    color: $red;
+}
 </style>
